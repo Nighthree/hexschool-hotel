@@ -7,6 +7,10 @@ npm install
 npm run dev
 ```
 
+## git local
+git config --local user.name yourname
+git config --local user.email hello@example.com
+
 ## prettier
 ```
 npm install --save-dev prettier husky lint-staged
