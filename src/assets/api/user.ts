@@ -1,6 +1,6 @@
 import axios from './index';
-import { UserDetailsProps } from '@/assets/types';
+import { UsersProps } from '@/assets/types';
 
-export const apiPostSignup = (params: UserDetailsProps) => {
+export const apiPostSignup = (params: UsersProps) => {
   return axios.post('/api/v1/user/signup', params);
 };

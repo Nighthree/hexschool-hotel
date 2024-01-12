@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="zh-Hant-TW">
       <head>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

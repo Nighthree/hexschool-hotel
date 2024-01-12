@@ -1,21 +1,29 @@
-export type UserProps = {
+export type UsersProps = {
   name: string;
   email: string;
   password: string;
   phone: string;
   birthday: string;
-  [key: string]: string;
-};
-
-export type AddressProps = {
   address: {
     zipcode: number;
     detail: string;
-    [key: string]: string | number;
   };
 };
 
-export type UserDetailsProps = UserProps & AddressProps;
+export type UserDetailProps = {
+  name: string;
+  email: string;
+  password: string;
+  phone: string;
+  [key: string]: string;
+};
+
+export type UserBirthdayProps = {
+  year: number;
+  month: number;
+  day: number;
+  [key: string]: number;
+};
 
 export type ZipCodeMapProps = {
   city: string;
@@ -26,5 +34,5 @@ export type ZipZoneProps = {
   city: string;
   county: string;
   zipcode: number;
-  detail?: string;
+  detail: string;
 };

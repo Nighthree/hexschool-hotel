@@ -4,6 +4,7 @@ import ZipCodeMap from '@/assets/constant/zipcode';
 
 export default function useZipcode() {
   const [zipcode, setZipcode] = useState<ZipCodeMapProps[]>([]);
+  const [cityList, setCityList] = useState<string[]>([]);
 
   const handleData = () => {
     const city = Array.from(new Set(ZipCodeMap.map((item) => item.city)));
@@ -24,9 +25,8 @@ export default function useZipcode() {
 
       data.push(obj);
     });
-
-    // console.log('ZipCodeMap', data);
-
+    // console.log('zipcode', data);
+    setCityList(city);
     setZipcode(data);
   };
 
@@ -36,5 +36,6 @@ export default function useZipcode() {
 
   return {
     state: zipcode,
+    cityList,
   };
 }
