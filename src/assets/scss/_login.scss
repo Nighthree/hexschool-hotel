@@ -1,0 +1,52 @@
+.login-layout {
+  display: block;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+.login-banner,
+.login-wrap {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.login-banner {
+  background-image: url('/images/login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-wrap {
+  background-repeat: no-repeat;
+  background-image: url('/images/line-sm.svg');
+  background-size: 100% 53px;
+  background-position: top 32px right 0;
+  @media (min-width: 768px) {
+    background-image: url('/images/line.svg');
+    background-size: 960px 187px;
+    background-position: top 72px right 0;
+  }
+}
+.login-content {
+  margin-top: 0px;
+  padding-top: 92px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  font-size: 14px;
+  @media (min-width: 768px) {
+    margin-top: 159px;
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 416px;
+    font-size: 16px;
+  }
+  .title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,18 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import Layout from '@/components/loginLayout';
+import LoginPage from '@/app/v.login';
+
 export default function Home() {
   return (
     <main>
-      <div>
-        <Link href="/login">login</Link>
-      </div>
-      <div>
-        <Link href="/register">register</Link>
-      </div>
-      <div>
-        <Link href="/dashboard">Dashboard</Link>
-      </div>
+      <Layout>
+        <LoginPage />
+      </Layout>
     </main>
   );
 }
